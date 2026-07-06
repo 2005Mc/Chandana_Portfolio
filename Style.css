@@ -4,7 +4,24 @@ padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
+.skill-bar{
 
+height:15px;
+background:#ddd;
+border-radius:20px;
+margin-bottom:20px;
+overflow:hidden;
+
+}
+
+.skill-fill{
+
+height:100%;
+width:0;
+background:#00d9ff;
+transition:2s;
+
+}
 html{
 scroll-behavior:smooth;
 }
