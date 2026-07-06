@@ -1,197 +1,1281 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   GLOBAL STYLES
+========================================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
-color:white;
-}
-
-header{
-position:fixed;
-width:100%;
-background:#111827;
-padding:20px 10%;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin-left:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-transition:.3s;
-}
-
-nav a:hover{
-color:#00d9ff;
-}
-.cert-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.cert-card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-transition:.4s;
-text-align:center;
-}
-
-.cert-card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px cyan;
-}
-.hobby-container{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-.hobby{
-
-padding:20px 30px;
-
-background:#1e293b;
-
-border-radius:30px;
-
-transition:.4s;
-
-font-weight:bold;
-
-}
-
-.hobby:hover{
-
-background:#00d9ff;
-
-color:black;
-
-transform:scale(1.1);
-
-}
-
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:linear-gradient(135deg,#1e293b,#0f172a);
-}
-
-.hero h1{
-font-size:60px;
-}
-
-.hero h2{
-color:#00d9ff;
-margin:10px 0;
-}
-
-.btn{
-display:inline-block;
-padding:12px 30px;
-background:#00d9ff;
-color:black;
-margin-top:20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
+    background:linear-gradient(135deg,#081b29,#0a192f,#112240);
+    color:white;
+    overflow-x:hidden;
 }
 
 section{
-padding:100px 10%;
+    padding:90px 10%;
 }
 
-h2{
-text-align:center;
-margin-bottom:40px;
-font-size:35px;
+.title{
+    font-size:40px;
+    text-align:center;
+    margin-bottom:60px;
+    color:#00e5ff;
+    position:relative;
 }
 
-.bar{
-background:#1e293b;
-height:10px;
-border-radius:20px;
-margin-bottom:20px;
+.title::after{
+    content:"";
+    width:90px;
+    height:4px;
+    background:#00e5ff;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-12px;
+    border-radius:20px;
 }
 
-.bar span{
-display:block;
-height:100%;
-background:#00d9ff;
-border-radius:20px;
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(8,27,41,.90);
+    backdrop-filter:blur(15px);
+    box-shadow:0 2px 15px rgba(0,0,0,.3);
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 10%;
+
 }
+
+.logo{
+
+    color:#00e5ff;
+    font-size:32px;
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    margin-left:35px;
+
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#00e5ff;
+
+}
+
+.menu{
+
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+
+}
+
+.hero-content{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+    width:100%;
+
+}
+
+.left{
+
+    flex:1;
+
+}
+
+.left h3{
+
+    font-size:25px;
+    color:#ddd;
+
+}
+
+.left h1{
+
+    font-size:60px;
+    margin:15px 0;
+    color:#00e5ff;
+
+}
+
+.left h2{
+
+    font-size:32px;
+    margin-bottom:20px;
+
+}
+
+.typing{
+
+    color:#00e5ff;
+    font-weight:700;
+
+}
+
+.left p{
+
+    font-size:18px;
+    color:#ddd;
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.buttons{
+
+    margin-top:35px;
+
+}
+
+.btn,
+.btn2{
+
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 34px;
+    border-radius:40px;
+    margin-right:18px;
+    transition:.4s;
+    font-weight:600;
+
+}
+
+.btn{
+
+    background:#00e5ff;
+    color:#081b29;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #00e5ff;
+
+}
+
+.btn2{
+
+    border:2px solid #00e5ff;
+    color:#00e5ff;
+
+}
+
+.btn2:hover{
+
+    background:#00e5ff;
+    color:#081b29;
+
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social{
+
+    margin-top:35px;
+
+}
+
+.social a{
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    width:48px;
+    height:48px;
+
+    border:2px solid #00e5ff;
+    border-radius:50%;
+
+    color:#00e5ff;
+    text-decoration:none;
+
+    margin-right:15px;
+
+    transition:.4s;
+
+    font-size:20px;
+
+}
+
+.social a:hover{
+
+    background:#00e5ff;
+    color:#081b29;
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   PROFILE IMAGE
+========================================== */
+
+.right{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.profile{
+
+    width:340px;
+    height:340px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:6px solid #00e5ff;
+
+    box-shadow:
+    0 0 20px #00e5ff,
+    0 0 40px #00e5ff,
+    0 0 70px #00e5ff;
+
+    transition:.5s;
+
+}
+
+.profile:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+.about-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.about-container p{
+
+    max-width:900px;
+    font-size:18px;
+    line-height:2;
+    color:#ddd;
+
+}
+
+.about-container h3{
+
+    color:#00e5ff;
+    margin-bottom:20px;
+    font-size:32px;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00e5ff;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#081b29;
+
+}/* ==========================================
+   EDUCATION SECTION
+========================================== */
+
+.education{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.edu-card{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.5s;
+
+}
+
+.edu-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px #00e5ff;
+
+}
+
+.edu-card h3{
+
+    color:#00e5ff;
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.edu-card h4{
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+.edu-card p{
+
+    color:#ccc;
+
+    margin-bottom:10px;
+
+}
+
+.edu-card span{
+
+    color:#00e5ff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   TECHNICAL SKILLS
+========================================== */
+
+.skills{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+
+    gap:35px;
+
+}
+
+.skill{
+
+    width:100%;
+
+}
+
+.skill p{
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#1b324d;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress div{
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(90deg,#00e5ff,#00bcd4);
+
+    animation:fill 2s ease forwards;
+
+}
+
+.html{
+
+    width:95%;
+
+}
+
+.css{
+
+    width:90%;
+
+}
+
+.js{
+
+    width:80%;
+
+}
+
+.java{
+
+    width:85%;
+
+}
+
+.c{
+
+    width:90%;
+
+}
+
+.ds{
+
+    width:80%;
+
+}
+
+@keyframes fill{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+
+/* ==========================================
+   SOFT SKILLS
+========================================== */
+
+.soft-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.soft-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.5s;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.soft-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px #00e5ff;
+
+}
+
+.soft-card i{
+
+    font-size:45px;
+
+    color:#00e5ff;
+
+    margin-bottom:20px;
+
+}
+
+.soft-card h3{
+
+    font-size:22px;
+
+}
+
+
+/* ==========================================
+   COMMON CARD DESIGN
+========================================== */
 
 .card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-transition:.4s;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    transition:.5s;
+
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px #00d9ff;
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px #00e5ff;
+
 }
 
-ul{
-line-height:35px;
-}
 
-footer{
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.hero-content{
+
+flex-direction:column-reverse;
+
 text-align:center;
-padding:30px;
-background:#111827;
+
+}
+
+.left h1{
+
+font-size:48px;
+
+}
+
+.profile{
+
+width:280px;
+
+height:280px;
+
+}
+
+.skills{
+
+grid-template-columns:1fr;
+
+}
+
 }
 
 @media(max-width:768px){
 
-.hero h1{
+.nav-links{
+
+display:none;
+
+}
+
+.menu{
+
+display:block;
+
+}
+
+.title{
+
+font-size:32px;
+
+}
+
+.left h1{
+
 font-size:38px;
+
 }
 
-nav{
+.left h2{
+
+font-size:24px;
+
+}
+
+.left p{
+
+font-size:16px;
+
+}
+
+.buttons{
+
+display:flex;
+
 flex-direction:column;
+
+gap:15px;
+
+align-items:center;
+
 }
 
-nav ul{
-margin-top:15px;
+.btn,
+
+.btn2{
+
+margin-right:0;
+
+width:220px;
+
+text-align:center;
+
+}
+
+.profile{
+
+width:230px;
+
+height:230px;
+
+}
+
+}/* ==========================================
+   PROJECTS SECTION
+========================================== */
+
+.project-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.5s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0 0 30px #00e5ff;
+
+}
+
+.project-icon{
+
+    font-size:55px;
+
+    color:#00e5ff;
+
+    margin-bottom:20px;
+
+}
+
+.project-card h3{
+
+    color:#00e5ff;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.project-card p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.tech{
+
+    display:inline-block;
+
+    background:#00e5ff;
+
+    color:#081b29;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   ACHIEVEMENTS
+========================================== */
+
+.achievement-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.achievement-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    border-left:5px solid #00e5ff;
+
+    padding:25px;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.4s;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#00e5ff;
+
+    color:#081b29;
+
+    box-shadow:0 0 25px #00e5ff;
+
+}
+
+/* ==========================================
+   CERTIFICATIONS
+========================================== */
+
+.certificate-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.certificate-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.5s;
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 0 30px #00e5ff;
+
+}
+
+.cert-icon{
+
+    font-size:55px;
+
+    color:#00e5ff;
+
+    margin-bottom:20px;
+
+}
+
+.certificate-card h3{
+
+    color:#00e5ff;
+
+    margin-bottom:10px;
+
+}
+
+.certificate-card p{
+
+    color:#ddd;
+
+}
+
+/* ==========================================
+   EXTRA CURRICULAR ACTIVITIES
+========================================== */
+
+.activity-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.activity-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.5s;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.activity-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#00e5ff;
+
+    color:#081b29;
+
+    box-shadow:0 0 25px #00e5ff;
+
+}
+
+/* ==========================================
+   CARD ANIMATIONS
+========================================== */
+
+.project-card,
+.achievement-card,
+.certificate-card,
+.activity-card{
+
+    animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.project-container,
+.achievement-container,
+.certificate-container,
+.activity-container{
+
+grid-template-columns:1fr;
+
+}
+
+.project-card{
+
+padding:25px;
+
+}
+
+.project-icon{
+
+font-size:45px;
+
+}
+
+.cert-icon{
+
+font-size:45px;
+
+}
+
+}/* ==========================================
+   LANGUAGES SECTION
+========================================== */
+
+.language-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.language-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.5s;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.language-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+.language-card h3{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+.language-card p{
+    color:#ddd;
+}
+
+/* ==========================================
+   HOBBIES
+========================================== */
+
+.hobby-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.hobby-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    padding:20px 30px;
+    border-radius:40px;
+    transition:.5s;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.hobby-card:hover{
+    background:#00e5ff;
+    color:#081b29;
+    transform:scale(1.08);
+}
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.stat-box{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    padding:35px;
+    border-radius:20px;
+    transition:.5s;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+.stat-box h1{
+    color:#00e5ff;
+    font-size:50px;
+}
+
+.stat-box p{
+    margin-top:10px;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.contact-box{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.5s;
+}
+
+.contact-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+.contact-box i{
+    font-size:40px;
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+.contact-box h3{
+    margin-bottom:10px;
+}
+
+.resume-btn{
+    text-align:center;
+    margin-top:40px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    margin-top:60px;
+    padding:50px 10%;
+    text-align:center;
+    background:#06131f;
+}
+
+footer h2{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#bbb;
+    margin:10px 0;
+}
+
+.footer-icons{
+    margin:25px 0;
+}
+
+.footer-icons a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    border-radius:50%;
+    border:2px solid #00e5ff;
+    color:#00e5ff;
+    margin:0 10px;
+    transition:.4s;
+}
+
+.footer-icons a:hover{
+    background:#00e5ff;
+    color:#081b29;
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+}
+
+/* ==========================================
+   BACK TO TOP BUTTON
+========================================== */
+
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#00e5ff;
+    color:#081b29;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    transition:.4s;
+    z-index:999;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
+
+/* ==========================================
+   SELECTION COLOR
+========================================== */
+
+::selection{
+    background:#00e5ff;
+    color:#081b29;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.language-container,
+.contact-container,
+.stats-container{
+grid-template-columns:1fr;
+}
+
+.hobby-container{
+flex-direction:column;
+align-items:center;
+}
+
+footer{
+padding:40px 20px;
+}
+
+footer h2{
+font-size:28px;
+}
+
+.contact-box,
+.language-card,
+.stat-box{
+padding:25px;
 }
 
 }
