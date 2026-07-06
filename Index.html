@@ -1,30 +1,42 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chandana Madasu | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Chandana Madasu | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<script src="https://kit.fontawesome.com/4b2e8d2f89.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
+
 <body>
+
+<!-- ================= HEADER ================= -->
 
 <header>
 
-<nav>
+<nav class="navbar">
 
-<h2>Chandana.</h2>
+<h2 class="logo">Chandana.</h2>
 
-<ul>
+<ul class="nav-links">
 
 <li><a href="#home">Home</a></li>
 
 <li><a href="#about">About</a></li>
+
+<li><a href="#education">Education</a></li>
 
 <li><a href="#skills">Skills</a></li>
 
@@ -34,174 +46,288 @@
 
 </ul>
 
+<i class="fas fa-bars menu"></i>
+
 </nav>
 
 </header>
 
+<!-- ================= HERO ================= -->
+
 <section class="hero" id="home">
 
-<div class="content">
+<div class="hero-content">
+
+<div class="left">
 
 <h3>Hello, I'm</h3>
 
 <h1>Chandana Madasu</h1>
 
-<h2>B.Tech Computer Science Student</h2>
+<h2>I am <span class="typing"></span></h2>
 
-<p>A passionate learner interested in Web Development, Java and Problem Solving.</p>
+<p>
+
+A passionate Computer Science Engineering student who enjoys
+building websites, solving programming problems and learning
+new technologies.
+
+</p>
+
+<div class="buttons">
 
 <a href="#contact" class="btn">Hire Me</a>
+
+<a href="resume.pdf" download class="btn2">
+
+Download Resume
+
+</a>
+
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="mailto:chandanamadasu2005@gmail.com">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<img src="images/profile.jpg" class="profile">
+
+</div>
 
 </div>
 
 </section>
 
+<!-- ================= ABOUT ================= -->
+
 <section id="about">
 
-<h2>About Me</h2>
+<h2 class="title">About Me</h2>
+
+<div class="about-container">
+
+<div>
+
+<h3>Who Am I?</h3>
 
 <p>
-I am pursuing B.Tech in Computer Science at Sri Venkateswara College of Engineering.
-I enjoy creating websites, learning new technologies and solving programming problems.
+
+I am currently pursuing B.Tech in Computer Science Engineering
+at Sri Venkateswara College of Engineering.
+
+I love creating attractive websites, learning Java,
+Data Structures and solving coding challenges.
+
+My goal is to secure a software engineering role
+where I can contribute while continuously learning.
+
 </p>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="education">
+
+<div class="edu-card">
+
+<h3>B.Tech (Computer Science)</h3>
+
+<h4>Sri Venkateswara College of Engineering</h4>
+
+<p>2023 - 2027</p>
+
+<span>81%</span>
+
+</div>
+
+<div class="edu-card">
+
+<h3>Intermediate (MPC)</h3>
+
+<h4>Sri Gayathri Junior College</h4>
+
+<p>2021 - 2023</p>
+
+<span>96.6%</span>
+
+</div>
+
+<div class="edu-card">
+
+<h3>SSC</h3>
+
+<h4>New Model EM High School</h4>
+
+<p>2020 - 2021</p>
+
+<span>99.6%</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TECHNICAL SKILLS ================= -->
+
 <section id="skills">
 
-<h2>Skills</h2>
+<h2 class="title">Technical Skills</h2>
+
+<div class="skills">
 
 <div class="skill">
 
 <p>HTML</p>
 
-<div class="bar"><span style="width:90%"></span></div>
+<div class="progress">
+<div class="html"></div>
+</div>
+
+</div>
+
+<div class="skill">
 
 <p>CSS</p>
 
-<div class="bar"><span style="width:85%"></span></div>
+<div class="progress">
+<div class="css"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>JavaScript</p>
+
+<div class="progress">
+<div class="js"></div>
+</div>
+
+</div>
+
+<div class="skill">
 
 <p>Java</p>
 
-<div class="bar"><span style="width:75%"></span></div>
+<div class="progress">
+<div class="java"></div>
+</div>
+
+</div>
+
+<div class="skill">
 
 <p>C Programming</p>
 
-<div class="bar"><span style="width:80%"></span></div>
+<div class="progress">
+<div class="c"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Data Structures</p>
+
+<div class="progress">
+<div class="ds"></div>
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<section id="projects">
+<!-- ================= SOFT SKILLS ================= -->
 
-<h2>Projects</h2>
+<section id="soft">
 
-<div class="cards">
+<h2 class="title">Soft Skills</h2>
 
-<div class="card">
+<div class="soft-container">
 
-<h3>Water Facilities & Drinking Water Availability</h3>
+<div class="soft-card">
 
-<p>Community Service Project focusing on water resources and sustainable solutions.</p>
+<i class="fas fa-lightbulb"></i>
 
-</div>
-
-<div class="card">
-
-<h3>College Event Notice Board</h3>
-
-<p>Web application developed using HTML & CSS.</p>
+<h3>Problem Solving</h3>
 
 </div>
 
-<div class="card">
+<div class="soft-card">
 
-<h3>My Mood Station</h3>
+<i class="fas fa-brain"></i>
 
-<p>Song recommendation system based on mood using HTML, CSS, JavaScript.</p>
-
-</div>
-
-</div>
-<section id="certifications">
-
-<h2>Certifications</h2>
-
-<div class="cert-container">
-
-<div class="cert-card">
-<h3>☁ AWS Cloud Fundamentals</h3>
-<p>AWS Skills & Training</p>
-</div>
-
-<div class="cert-card">
-<h3>💻 Full Stack Development using Java</h3>
-<p>Java Full Stack Training Program</p>
-</div>
-  <div class="cert-card">
-<h3>Quantum Fundamentals</h3>
-<p>Quantum Fundamentals program</p>
-</div>
+<h3>Analytical Thinking</h3>
 
 </div>
 
-</section>
-</section>
+<div class="soft-card">
 
-<section id="achievements">
+<i class="fas fa-users"></i>
 
-<h2>Achievements</h2>
+<h3>Team Work</h3>
 
-<ul>
+</div>
 
-<li>🏆 1st Prize - District PPT Presentation</li>
+<div class="soft-card">
 
-<li>🏆 2nd Prize - Debate Competition</li>
+<i class="fas fa-comments"></i>
 
-<li>🏆 1st Prize - Mathematics Day PPT</li>
+<h3>Communication</h3>
 
-<li>🏆 2nd Prize - Technical Quiz</li>
+</div>
 
-<li>🏆 Appreciation Award - Bharatanatyam</li>
+<div class="soft-card">
 
-</ul>
-<section id="hobbies">
+<i class="fas fa-bolt"></i>
 
-<h2>Hobbies</h2>
+<h3>Quick Learner</h3>
 
-<div class="hobby-container">
+</div>
 
-<div class="hobby">📚 Reading Books</div>
+<div class="soft-card">
 
-<div class="hobby">♟ Playing Chess</div>
+<i class="fas fa-sync-alt"></i>
 
-<div class="hobby">💃 Bharatanatyam Dance</div>
+<h3>Adaptability</h3>
 
-<div class="hobby">🤝 Community Service</div>
+</div>
 
 </div>
 
 </section>
-</section>
 
-<section id="contact">
-
-<h2>Contact Me</h2>
-
-<p>Email : chandanamadasu2005@gmail.com</p>
-
-<p>Phone : +91 8247801042</p>
-
-</section>
-
-<footer>
-
-© 2026 Chandana Madasu
-
-</footer>
+<!-- Continue in Part 2 -->
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
+```
