@@ -180,6 +180,69 @@ header{
     color:#ddd;
     line-height:1.8;
 
+}/* JavaScript Classes */
+
+.hidden{
+
+opacity:0;
+transform:translateY(80px);
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.nav-links.active{
+
+display:flex;
+flex-direction:column;
+position:absolute;
+top:80px;
+right:10px;
+background:#081b29;
+padding:20px;
+border-radius:15px;
+gap:20px;
+
+}
+
+.light{
+
+background:#ffffff;
+color:#111;
+
+}
+
+.light section{
+
+background:#ffffff;
+
+}
+
+.light .project-card,
+.light .edu-card,
+.light .soft-card,
+.light .certificate-card,
+.light .achievement-card,
+.light .activity-card,
+.light .language-card,
+.light .contact-box,
+.light .stat-box{
+
+background:#f4f4f4;
+color:#111;
+
+}
+
+.light .navbar{
+
+background:#ffffff;
+
 }
 
 /* ==========================================
